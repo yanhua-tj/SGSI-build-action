@@ -7,9 +7,9 @@ on:
     types: [started]
     
 env:              
-  ROM_URL: https://dl.google.com/developers/android/sc/images/ota/redfin-ota-spp2.210219.008-3d61e529.zip
-  ZIP_NAME: test.zip
-  OS_TYPE: Pixel
+  ROM_URL: https://download.meizu.com/Firmware/Flyme/16T/9.21.4.24/cn_daily/20210424183408/2ad0501f/update.zip
+  ZIP_NAME: Meizu16T_Flyme_9.21.4.24.zip
+  OS_TYPE: Flyme
   BUILD_TYPE: 'ab'
   REPACK_NAME: test_action.zip
   VERSION: 12
