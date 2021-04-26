@@ -12,7 +12,7 @@ env:
   OS_TYPE: Flyme
   BUILD_TYPE: 'ab'
   REPACK_NAME: test_action.zip
-  VERSION: 12
+  VERSION: 10
   upload_WeTransfer: 'true'
   upload_action-gh-release: 'false'
   SETUP: 'true'
@@ -32,7 +32,7 @@ jobs:
             sudo apt-get install -y git openjdk-8-jdk wget git zip unzip curl
        - name: Cloning...
          run: |
-             git clone https://github.com/xiaoxindada/SGSI-build-tool.git -b 12 $GITHUB_WORKSPACE/SGSI-build-tool
+             git clone https://github.com/xiaoxindada/SGSI-build-tool.git -b 10 $GITHUB_WORKSPACE/SGSI-build-tool
            
        - name: Download zip...
          run: |
@@ -73,7 +73,7 @@ jobs:
          with:
            files: ${{ github.workspace }}/SGSI-build-tool/${{ env.REPACK_NAME }}
            name: xiaoxinSGSI-${{ env.OS_TYPE }}-${{ env.BUILD_TYPE }}-Android${{ env.VERSION }}-unpack
-           tag_name: 12
+           tag_name: 10
            #body: Use actions auto bulid
          env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}       
